@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BestFact</title>
+
+<%= stylesheet_link_tag    "styles", media: "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag    "sort", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "jquery-1.10.2.min", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "sort", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "jquery.tablesorter.min", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "jquery-1.8.3.min.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "jquery.elevatezoom.js", "data-turbolinks-track" => true %>
+
+
+<link rel="icon" href="public/images/icon.ico" />
+</head>
+
+<body>
+<%=yield%>
+</body>
+</html>

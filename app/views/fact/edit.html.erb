@@ -1,0 +1,38 @@
+
+<h1>Edit Fact</h1>
+
+
+<%= form_for @edit, :as => :fact , :url => update_path,:id => @edit.id,:html => {:class => "input_field_div",:multipart => true }, :method => "post" do |f| %>
+
+<div class="field_hight">
+  <label>Title</label><br/>
+<%= f.text_field :title, :class => "text_field_div" %>
+</div>
+
+  <div class="field_hight">
+  <label>Author</label><br/>
+  <%= f.file_field :fact_image, :class => "text_field_div" %>
+</div>
+
+
+<div class="field_hight">
+  <label>Author</label><br/>
+  <%= f.text_field :author, :class => "text_field_div" %>
+</div>
+
+   <div class="field_hight">
+  <label>Content</label><br/>
+  <%= f.text_area :content,:class => "text_area_div" %>
+
+</div>
+
+
+<div class="submit_button">
+  <%= f.submit "Submit" , :class => "submit_button_tec"%>
+</div>
+
+
+
+
+
+<% end %>
